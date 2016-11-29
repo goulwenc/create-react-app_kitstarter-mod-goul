@@ -1,0 +1,87 @@
+@mixin clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin box-sizing($value) {
+    -webkit-box-sizing: $value;
+       -moz-box-sizing: $value;
+        -ms-box-sizing: $value;
+         -o-box-sizing: $value;
+            box-sizing: $value;
+}
+
+@mixin transition($property, $duration, $easing, $delay) {
+    -webkit-transition: $property $duration $easing $delay;
+       -moz-transition: $property $duration $easing $delay;
+        -ms-transition: $property $duration $easing $delay;
+         -o-transition: $property $duration $easing $delay;
+            transition: $property $duration $easing $delay;
+}
+
+@mixin opacity($opacity) {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity * 100})"; // IE8
+    filter: alpha(opacity=#{$opacity * 100}); // IE7
+    opacity: $opacity;
+}
+
+@mixin font-size($font-size, $line-height:null) {
+    $html-font-size: 16 !global !default;
+    font-size: $font-size +px;
+    font-size: ($font-size / $html-font-size)*1rem;
+    @if $line-height != null { line-height: $line-height / $font-size; }
+}
+
+@mixin position ($position: relative, $coordinates: 0 0 0 0, $fullsize:false) {
+
+  @if type-of($position) == list {
+    $coordinates: $position;
+    $position: relative;
+  }
+  @if($fullsize == true){
+    width:100%;
+    height:100%;
+  }
+  $top: nth($coordinates, 1);
+  $right: nth($coordinates, 2);
+  $bottom: nth($coordinates, 3);
+  $left: nth($coordinates, 4);
+
+  position: $position;
+
+  @if $top == auto {
+    top: $top;
+  }
+  @else if not(unitless($top)) {
+    top: $top;
+  }
+
+  @if $right == auto {
+    right: $right;
+  }
+  @else if not(unitless($right)) {
+    right: $right;
+  }
+
+  @if $bottom == auto {
+    bottom: $bottom;
+  }
+  @else if not(unitless($bottom)) {
+    bottom: $bottom;
+  }
+
+  @if $left == auto {
+    left: $left;
+  }
+  @else if not(unitless($left)) {
+    left: $left;
+  }
+}

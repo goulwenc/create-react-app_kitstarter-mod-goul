@@ -1,0 +1,28 @@
+@import "compass";
+@import "compass/reset";
+@import "compass/css3";
+
+$grey : #4d4d4d;
+
+//mixin clearfix
+.clearfix{
+    @include clearfix;
+}
+
+p, span, h1, h2, h3, h4, h5, h6, div, a {
+	// font-family: "proxima_nova_regular", Georgia;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #000;
+}
+
+body {
+	background: #FFF;
+}
+
+.hidden {
+  display: none;
+}
