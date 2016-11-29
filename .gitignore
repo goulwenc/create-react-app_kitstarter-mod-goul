@@ -3,6 +3,9 @@
 # dependencies
 node_modules
 
+# sass cache
+.sass-cache
+
 # testing
 coverage
 
