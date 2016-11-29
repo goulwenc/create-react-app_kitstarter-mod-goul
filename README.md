@@ -9,12 +9,15 @@ How to run the app :
 --------------------
 
 - Install compass
+
 $ gem update --system
 
 $ gem install compass
 
 - Install node packages
+
 $ npm install
 
 - Launch
+
 $ npm start
