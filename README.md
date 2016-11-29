@@ -4,7 +4,9 @@ Based on Facebook create-react-app kitstarter, adds :
 - New tree 
 - Compass entry point via index.css (TODO : real compass support into Webpack)
 
-- How to run the app :
+--------------------
+How to run the app :
+--------------------
 
 - Install compass
 $ gem update --system
