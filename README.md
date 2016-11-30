@@ -18,6 +18,10 @@ $ gem install compass
 
 $ npm install
 
-- Launch
+- launch and watch
 
 $ npm start
+
+- watch Compass
+
+$ compass watch
