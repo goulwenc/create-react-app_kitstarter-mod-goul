@@ -1,4 +1,5 @@
 import React from 'react'
+import NavLink from './NavLink'
 
 export default React.createClass({
   componentDidMount() {
@@ -28,7 +29,9 @@ export default React.createClass({
 
     var listRestos = restos.map((resto) =>
       <li key={resto.id}>
-        {resto.name}
+        <NavLink to={`/restos/${resto.name}`}>
+          {resto.name}
+        </NavLink>
       </li>
     );
 
