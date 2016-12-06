@@ -2,14 +2,14 @@ import React from 'react'
 
 export default React.createClass({
   componentDidMount() {
-    console.log("Thumbnail did mount");
+    console.log("About did mount");
   },
 
   render() {
     return (
-      <div>
-        <p>Thumbnail</p>
-      </div>
+    <div>
+      <h2>About</h2>
+    </div>
     )
   }
 })
