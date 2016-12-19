@@ -6,6 +6,7 @@ import Home from './modules/Home'
 import Resto from './modules/Resto'
 import Restos from './modules/Restos'
 import About from './modules/About'
+import styles from './index.css'
 
 render((
   <Router history={browserHistory}>
