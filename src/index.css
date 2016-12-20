@@ -71,48 +71,108 @@ html {
 }
 
 /* line 13, sass/_01base.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 18, sass/_01base.scss */
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
-/* line 20, sass/_01base.scss */
+/* line 24, sass/_01base.scss */
+body {
+  font-family: 'Nunito Sans', serif;
+  font-size: 12px;
+  background: #FFF;
+}
+
+/* line 31, sass/_01base.scss */
 .clearfix {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 28, sass/_01base.scss */
+/* line 35, sass/_01base.scss */
 a {
   text-decoration: none;
   cursor: pointer;
   color: #000;
 }
 
-/* line 34, sass/_01base.scss */
-body {
-  background: #000;
-}
-
-/* line 38, sass/_01base.scss */
+/* line 41, sass/_01base.scss */
 .hidden {
   display: none;
 }
 
-/* line 1, sass/_03layout.scss */
-html, body {
-  height: 100%;
+/* line 3, sass/_03layout.scss */
+h1, h2, h3, h4 {
+  background: #000;
+  color: #FFF;
 }
 
-/* line 6, sass/_03layout.scss */
-body {
-  background: white;
+/* line 8, sass/_03layout.scss */
+h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  padding: 30px 5%;
 }
 
-/* line 12, sass/_03layout.scss */
+/* line 14, sass/_03layout.scss */
+h2 {
+  font-size: 2em;
+  background: #ECECEC;
+  padding: 20px 5%;
+  margin-bottom: 10px;
+}
+
+/* line 21, sass/_03layout.scss */
+h3 {
+  font-size: 1em;
+  padding: 10px 5%;
+}
+
+/* line 36, sass/_03layout.scss */
 #root {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+}
+
+/* line 42, sass/_03layout.scss */
+.page {
+  font-size: 1rem;
+}
+
+/* line 1, sass/_05nav.scss */
+.page-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+/* line 5, sass/_05nav.scss */
+.page-nav a {
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* line 2, sass/_07restos.scss */
+.page-restos ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 5, sass/_07restos.scss */
+.page-restos ul li {
+  flex: 0 1 25%;
+}
+/* line 11, sass/_07restos.scss */
+.page-restos ul li a {
+  padding: 10px;
+  border: 2px solid #FFF;
+  background: #ECECEC;
+  display: block;
+  height: 250px;
 }

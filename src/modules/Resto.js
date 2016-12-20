@@ -7,7 +7,7 @@ export default React.createClass({
 
   render() {
     return (
-    <div>
+    <div className="page page-resto">
       <h2>{this.props.name}</h2>
     </div>
     )

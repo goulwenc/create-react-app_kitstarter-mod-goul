@@ -1,0 +1,20 @@
+.page-restos {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      // display: inline-block;
+      // width: 250px;
+      // float: left;
+      // width: 25%;
+      flex: 0 1 25%;
+      a {
+        padding: 10px;
+        border: 2px solid #FFF;
+        background: $grey;
+        display: block;
+        height: 250px;
+      }
+    }
+  }
+}

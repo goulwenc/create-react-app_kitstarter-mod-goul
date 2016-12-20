@@ -7,10 +7,10 @@ export default React.createClass({
     return (
       <div>
         <Header />
-        <ul role="nav">
+        <ul className="page page-nav" role="nav">
           <li><NavLink to="/" onlyActiveOnIndex>Home</NavLink></li>
-          <li><NavLink to="/about">About</NavLink></li>
           <li><NavLink to="/restos">Restos</NavLink></li>
+          <li><NavLink to="/about">About</NavLink></li>
         </ul>
         {this.props.children}
       </div>

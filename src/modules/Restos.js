@@ -24,6 +24,22 @@ export default React.createClass({
       {
         id: "4",
         name: "Le Rey"
+      },
+      {
+        id: "5",
+        name: "Hotdog Factory"
+      },
+      {
+        id: "6",
+        name: "Mon Beyrouth"
+      },
+      {
+        id: "7",
+        name: "Balls"
+      },
+      {
+        id: "8",
+        name: "L'Express Bar"
       }
     ];
 
@@ -38,7 +54,7 @@ export default React.createClass({
     console.log(listRestos);
 
     return (
-      <div>
+      <div className="page page-restos">
         <h2>Restos</h2>
         <ul>
           {listRestos}

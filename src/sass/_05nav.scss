@@ -1,0 +1,10 @@
+.page-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  a {
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+  }
+}
