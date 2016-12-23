@@ -12,9 +12,8 @@ render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
-      <Route path="/restos" component={Restos}>
-        <Route path="/restos/:restoName" component={Resto} />
-      </Route>
+      <Route path="/restos" component={Restos} />
+      <Route path="/restos/:restoName" component={Resto} />
       <Route path="/about" component={About} />
     </Route>
   </Router>
