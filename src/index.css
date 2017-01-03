@@ -176,3 +176,9 @@ h3 {
   display: block;
   height: 250px;
 }
+
+/* line 3, sass/_08resto.scss */
+.page-resto p span {
+  display: inline-block;
+  margin-right: 5px;
+}

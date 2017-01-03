@@ -16,48 +16,96 @@ export default React.createClass({
       {
         id: "1",
         name: "Le Septime",
-        adress: "Avenue de la République"
+        adress: "85, rue de Charonne",
+        city: "PARIS",
+        zipcode: "75020"
       },
       {
         id: "2",
         name: "Chez Momo",
-        adress: "Avenue de la République"
+        adress: "44, avenue de la République",
+        city: "PARIS",
+        zipcode: "75011"
       },
       {
         id: "3",
         name: "Couscous Déli",
-        adress: "Avenue de la République"
+        adress: "15, boulevard de Belleville",
+        city: "PARIS",
+        zipcode: "75010"
       },
       {
         id: "4",
         name: "Le Rey",
-        adress: "Avenue de la République"
+        adress: "1, place Léon Blum",
+        city: "PARIS",
+        zipcode: "75011"
       },
       {
         id: "5",
         name: "Hotdog Factory",
-        adress: "Avenue de la République"
+        adress: "11, avenue Parmentier",
+        city: "PARIS",
+        zipcode: "75011"
       },
       {
         id: "6",
-        name: "Mon Beyrouth",
-        adress: "Avenue de la République"
+        name: "Le Royal Beyrouth",
+        adress: "2, rue de la Folie Méricourt",
+        city: "PARIS",
+        zipcode: "75011"
       },
       {
         id: "7",
         name: "Balls",
-        adress: "Avenue de la République"
+        adress: "56, rue Saint Maur",
+        city: "PARIS",
+        zipcode: "75011"
       },
       {
         id: "8",
         name: "L'Express Bar",
-        adress: "Avenue de la République"
+        adress: "79, rue Saint Maur",
+        city: "PARIS",
+        zipcode: "75011"
       }
     ];
 
+    // var listRestos = restos.map((resto) =>
+    //   <li key={resto.id}>
+    //     <NavLink to={`/restos/${resto.name}`} data-adress={`${resto.adress}`}>
+    //       {resto.name}
+    //     </NavLink>
+    //   </li>
+    // );
+
+    // from DanYellow
+    // var listRestos = restos.map((resto) =>
+    //   <li key={resto.id}>
+    //     <NavLink to={{
+    //         pathname: `/restos/${resto.name}`,
+    //         state: { from_query: true },
+    //         query: {foo: 'hello'}
+    //       }}>
+    //       {resto.name}
+    //     </NavLink>
+    //   </li>
+    // );
+
     var listRestos = restos.map((resto) =>
       <li key={resto.id}>
-        <NavLink to={`/restos/${resto.name}`} data-adress={`${resto.adress}`}>
+        <NavLink to={{
+            pathname: `/restos/${resto.name}`,
+            state: {
+              name: resto.name,
+              adress: resto.adress,
+              city: resto.city,
+              zipcode: resto.zipcode
+            },
+            query: {
+
+            }
+          }}>
           {resto.name}
         </NavLink>
       </li>
@@ -71,6 +119,7 @@ export default React.createClass({
         <ul>
           {listRestos}
         </ul>
+
         {this.props.children}
       </div>
     )
