@@ -71,27 +71,6 @@ export default React.createClass({
       }
     ];
 
-    // var listRestos = restos.map((resto) =>
-    //   <li key={resto.id}>
-    //     <NavLink to={`/restos/${resto.name}`} data-adress={`${resto.adress}`}>
-    //       {resto.name}
-    //     </NavLink>
-    //   </li>
-    // );
-
-    // from DanYellow
-    // var listRestos = restos.map((resto) =>
-    //   <li key={resto.id}>
-    //     <NavLink to={{
-    //         pathname: `/restos/${resto.name}`,
-    //         state: { from_query: true },
-    //         query: {foo: 'hello'}
-    //       }}>
-    //       {resto.name}
-    //     </NavLink>
-    //   </li>
-    // );
-
     var listRestos = restos.map((resto) =>
       <li key={resto.id}>
         <NavLink to={{
@@ -101,17 +80,12 @@ export default React.createClass({
               adress: resto.adress,
               city: resto.city,
               zipcode: resto.zipcode
-            },
-            query: {
-
             }
           }}>
           {resto.name}
         </NavLink>
       </li>
     );
-
-    console.log('listRestos : ', listRestos);
 
     return (
       <div className="page page-restos">

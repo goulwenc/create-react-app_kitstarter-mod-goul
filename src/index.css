@@ -144,8 +144,32 @@ h3 {
 /* line 42, sass/_03layout.scss */
 .page {
   font-size: 1rem;
+  animation: pulse 1s;
+}
+/* line 45, sass/_03layout.scss */
+.page h2 {
+  animation: smooth-landing 1s;
+  animation-timing-function: cubic-bezier(0.75, 0.8, 0.71, 0.92);
 }
 
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes smooth-landing {
+  0% {
+    padding-left: 0;
+    color: #ECECEC;
+  }
+  100% {
+    padding-left: 5%;
+    color: #FFF;
+  }
+}
 /* line 1, sass/_05nav.scss */
 .page-nav {
   display: flex;
@@ -177,7 +201,7 @@ h3 {
   height: 250px;
 }
 
-/* line 3, sass/_08resto.scss */
+/* line 4, sass/_08resto.scss */
 .page-resto p span {
   display: inline-block;
   margin-right: 5px;

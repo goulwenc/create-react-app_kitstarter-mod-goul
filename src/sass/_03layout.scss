@@ -41,4 +41,33 @@ p {
 
 .page {
   font-size: 1rem;
+  animation: pulse 1s;
+  h2 {
+    animation: smooth-landing 1s;
+    animation-timing-function: cubic-bezier(.75,.8,.71,.92);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes smooth-landing {
+  0% {
+    padding-left: 0;
+    color: $grey;
+  }
+  100% {
+    padding-left: 5%;
+    color: #FFF;
+  }
+}
+
+.visible {
+
 }

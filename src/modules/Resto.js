@@ -8,6 +8,7 @@ class Resto extends React.Component {
   componentDidMount() {
     console.log("Resto did mount");
     console.log('item data : ', this.state);
+    
   }
   render() {
     return (
