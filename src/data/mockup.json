@@ -1,0 +1,153 @@
+{
+  "test": {
+    "test": "this is a test"
+  },
+  "menu-sub": [
+    {
+      "name": "Map"
+    },
+    {
+      "name": "Photos"
+    },
+    {
+      "name": "Wiki"
+    }
+  ],
+  "places": [
+    {
+      "id": "1",
+      "name": "Gizah",
+      "location": "Egypte",
+      "location-sub": "Caire suburbs",
+      "date": "estimated between 2500 BC and 2000 BC",
+      "img-url": "mini-gizah.jpg",
+      "description": "La renommée internationale de Gizeh est due aux célèbres grandes pyramides de Khéops, Khéphren et Mykérinos, ainsi qu'au Sphinx, témoins de la civilisation égyptienne antique, situés sur le plateau à quelques kilomètres de la ville.",
+      "gps": "XXX : XXX",
+      "wiki": "url-to-api",
+      "photos": [
+        {
+          "url": "../img/places/gizah-1.jpg",
+          "description": "Pyramide de Kephren",
+          "crédits": "Ray Liotta"
+        },
+        {
+          "url": "../img/places/gizah-2.jpg",
+          "description": "Pyramide de Mykerinos",
+          "crédits": "Ray Liotta"
+        },
+        {
+          "url": "../img/places/gizah-3.jpg",
+          "description": "Pyramide de Djeser",
+          "crédits": "Ray Liotta"
+        },
+        {
+          "url": "../img/places/gizah-4.jpg",
+          "description": "Pyramide de Koufou",
+          "crédits": "Ray Liotta"
+        }
+      ]
+    },
+
+    {
+      "id": "2",
+      "name": "Caral",
+      "location": "Peru",
+      "location-sub": "Limas District",
+      "date": "estimated between 5000 BC and 2000 BC",
+      "img-url": "mini-gizah.jpg",
+      "description": "La renommée internationale de Gizeh est due aux célèbres grandes pyramides de Khéops, Khéphren et Mykérinos, ainsi qu'au Sphinx, témoins de la civilisation égyptienne antique, situés sur le plateau à quelques kilomètres de la ville.",
+      "gps": "XXX : XXX",
+      "wiki": "url-to-api",
+      "photos": [
+        {
+          "url": "../img/places/gizah-1.jpg",
+          "description": "Pyramide de Kephren",
+          "crédits": "Ray Liotta"
+        },
+        {
+          "url": "../img/places/gizah-2.jpg",
+          "description": "Pyramide de Mykerinos",
+          "crédits": "Ray Liotta"
+        },
+        {
+          "url": "../img/places/gizah-3.jpg",
+          "description": "Pyramide de Djeser",
+          "crédits": "Ray Liotta"
+        },
+        {
+          "url": "../img/places/gizah-4.jpg",
+          "description": "Pyramide de Koufou",
+          "crédits": "Ray Liotta"
+        }
+      ]
+    },
+
+    {
+      "id": "3",
+      "name": "Gobekli Tepe",
+      "location": "Turkey",
+      "location-sub": "South Anatolia",
+      "date": "estimated 10000 BC",
+      "img-url": "mini-gizah.jpg",
+      "description": "La renommée internationale de Gizeh est due aux célèbres grandes pyramides de Khéops, Khéphren et Mykérinos, ainsi qu'au Sphinx, témoins de la civilisation égyptienne antique, situés sur le plateau à quelques kilomètres de la ville.",
+      "gps": "XXX : XXX",
+      "wiki": "url-to-api",
+      "photos": [
+        {
+          "url": "../img/places/gizah-1.jpg",
+          "description": "Pyramide de Kephren",
+          "crédits": "Ray Liotta"
+        },
+        {
+          "url": "../img/places/gizah-2.jpg",
+          "description": "Pyramide de Mykerinos",
+          "crédits": "Ray Liotta"
+        },
+        {
+          "url": "../img/places/gizah-3.jpg",
+          "description": "Pyramide de Djeser",
+          "crédits": "Ray Liotta"
+        },
+        {
+          "url": "../img/places/gizah-4.jpg",
+          "description": "Pyramide de Koufou",
+          "crédits": "Ray Liotta"
+        }
+      ]
+    },
+
+    {
+      "id": "4",
+      "name": "Puma Punku",
+      "location": "Peru",
+      "location-sub": "Titicaca lake area",
+      "date": "7000 BC",
+      "img-url": "mini-gizah.jpg",
+      "description": "La renommée internationale de Gizeh est due aux célèbres grandes pyramides de Khéops, Khéphren et Mykérinos, ainsi qu'au Sphinx, témoins de la civilisation égyptienne antique, situés sur le plateau à quelques kilomètres de la ville.",
+      "gps": "XXX : XXX",
+      "wiki": "url-to-api",
+      "photos": [
+        {
+          "url": "../img/places/gizah-1.jpg",
+          "description": "Pyramide de Kephren",
+          "crédits": "Ray Liotta"
+        },
+        {
+          "url": "../img/places/gizah-2.jpg",
+          "description": "Pyramide de Mykerinos",
+          "crédits": "Ray Liotta"
+        },
+        {
+          "url": "../img/places/gizah-3.jpg",
+          "description": "Pyramide de Djeser",
+          "crédits": "Ray Liotta"
+        },
+        {
+          "url": "../img/places/gizah-4.jpg",
+          "description": "Pyramide de Koufou",
+          "crédits": "Ray Liotta"
+        }
+      ]
+    }
+  ]
+}

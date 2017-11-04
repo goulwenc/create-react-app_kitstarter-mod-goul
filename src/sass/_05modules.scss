@@ -1,0 +1,70 @@
+$color-red: #CF6766; //CRIMSON SKY
+$color-indigo: #30415D; //INDIGO
+$color-marine: #031424; //ULTRAMARINE
+$color-lightblue: #8EAEBD; //LIGHT BLUE
+
+.col-wrapper {
+  // display: flex;
+  // height:400px;
+  // flex-direction: row;
+  // height: 100vh;
+  // flex-grow: column wrap;
+  // align-items: flex-start;
+}
+
+.col {
+  // flex: 1 1 calc(10%);
+  // -webkit-flex: 1 1 auto;
+  // flex: 1 1 auto;
+}
+
+.col-1 {
+  // flex: 1;
+}
+
+.col-2 {
+  // flex: 3;
+}
+
+.module {
+  font-size: 1rem;
+}
+
+.header {
+  background-color: $color-red;
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: column;
+  h1 {
+    font-size: 3em;
+    color: $color-marine;
+  }
+}
+
+.header-sub {
+  background-color: $color-lightblue;
+}
+
+.menu {
+  background-color: $color-marine;
+
+  ul {
+    li {
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+.menu-sub {
+  background-color: $color-red;
+}
+
+.content {
+  background-color: $color-indigo;
+}
+
+.footer {
+  background-color: $color-lightblue;
+}

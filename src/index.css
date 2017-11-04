@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -87,6 +88,156 @@ body {
 }
 
 /* line 1, sass/_03layout.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 5, sass/_03layout.scss */
+html {
+  font-size: 16px;
+}
+@media screen and (min-width: 900px) {
+  /* line 5, sass/_03layout.scss */
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 5, sass/_03layout.scss */
+  html {
+    font-size: 20px;
+  }
+}
+
+/* line 17, sass/_03layout.scss */
 html, body {
   height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/* line 23, sass/_03layout.scss */
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+/* line 28, sass/_03layout.scss */
+h1, h2, h3, h4 {
+  font-family: 'Rozha One', serif;
+  text-transform: uppercase;
+}
+
+/* line 33, sass/_03layout.scss */
+html {
+  display: flex;
+  /* correction bug IE de min-height non appliqué à body */
+  flex-direction: column;
+}
+
+/* line 40, sass/_03layout.scss */
+body {
+  /* crée un contexte flex pour ses enfants */
+  display: flex;
+  /* affichage vertical */
+  flex-direction: column;
+  /* toute la hauteur du viewport */
+  min-height: 100vh;
+  padding: 1em;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* line 59, sass/_03layout.scss */
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 64, sass/_03layout.scss */
+.header {
+  height: 60px;
+}
+
+/* line 68, sass/_03layout.scss */
+.col-wrapper {
+  /* occupe la hauteur restante */
+  flex: 1 1 auto;
+  /* crée un contexte flex pour ses enfants */
+  display: flex;
+}
+
+/* line 77, sass/_03layout.scss */
+.col-1 {
+  width: 10em;
+}
+/* line 79, sass/_03layout.scss */
+.col-1 ul {
+  display: flex;
+  align-content: center;
+  min-height: -webkit-calc(100vh - 60px - 20px - 2em);
+  flex-direction: column;
+}
+/* line 85, sass/_03layout.scss */
+.col-1 ul li a {
+  display: block;
+  padding: 2em;
+}
+
+/* line 94, sass/_03layout.scss */
+.col-2 {
+  /* occupe la largeur restante */
+  flex: 1;
+}
+
+/* line 99, sass/_03layout.scss */
+.footer {
+  height: 20px;
+}
+
+/* line 103, sass/_03layout.scss */
+.active {
+  text-decoration: underline;
+}
+
+/* line 29, sass/_05modules.scss */
+.module {
+  font-size: 1rem;
+}
+
+/* line 33, sass/_05modules.scss */
+.header {
+  background-color: #CF6766;
+}
+/* line 38, sass/_05modules.scss */
+.header h1 {
+  font-size: 3em;
+  color: #031424;
+}
+
+/* line 44, sass/_05modules.scss */
+.header-sub {
+  background-color: #8EAEBD;
+}
+
+/* line 48, sass/_05modules.scss */
+.menu {
+  background-color: #031424;
+}
+/* line 53, sass/_05modules.scss */
+.menu ul li a {
+  color: white;
+}
+
+/* line 60, sass/_05modules.scss */
+.menu-sub {
+  background-color: #CF6766;
+}
+
+/* line 64, sass/_05modules.scss */
+.content {
+  background-color: #30415D;
+}
+
+/* line 68, sass/_05modules.scss */
+.footer {
+  background-color: #8EAEBD;
 }

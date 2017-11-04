@@ -1,9 +1,105 @@
-html, body 
-{
-    height: 100%; 
+* {
+  box-sizing: border-box;
 }
 
-body
-{
+html {
+  font-size: 16px;
+
+  @media screen and (min-width: 900px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
     // font-family: 'HelveticaNeue45', Arial;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Rozha One', serif;
+  text-transform: uppercase;
+}
+
+html {
+  display: flex;
+
+  /* correction bug IE de min-height non appliqué à body */
+  flex-direction: column;
+}
+
+body {
+  /* crée un contexte flex pour ses enfants */
+  display: flex;
+
+  /* affichage vertical */
+  flex-direction: column;
+
+  /* toute la hauteur du viewport */
+  min-height: 100vh;
+
+  padding: 1em;
+
+  // font-family: 'Rozha One', serif;
+  font-family: 'Roboto Slab', serif;
+}
+
+$headerSize: 60px;
+$footerSize: 20px;
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: $headerSize;
+}
+
+.col-wrapper {
+  /* occupe la hauteur restante */
+  flex: 1 1 auto;
+  /* crée un contexte flex pour ses enfants */
+  display: flex;
+  // min-height: calc(100vh - $headerSize - $footerSize - 60px);
+  // min-height: 90vh;
+}
+
+.col-1 {
+  width: 10em;
+  ul {
+    display: flex;
+    align-content: center;
+    min-height: unquote("-webkit-calc(100vh - 60px - 20px - 2em)"); // vh height - header - footer - global padding
+    flex-direction: column;
+    li {
+      a {
+        display: block;
+        padding: 2em;
+      }
+      // align-items: flex-end;
+    }
+  }
+}
+
+.col-2 {
+  /* occupe la largeur restante */
+  flex: 1;
+}
+
+.footer {
+  height: $footerSize;
+}
+
+.active {
+  text-decoration: underline;
 }
