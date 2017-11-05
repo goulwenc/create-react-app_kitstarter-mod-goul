@@ -10,13 +10,17 @@ class Menu extends Component {
     };
     this.data = mockData;
     this.filterList = this.filterList.bind(this);
-    console.log(props);
+    console.log(this.data.places);
+  }
+
+  handleLinkClick() {
+
   }
 
   componentWillMount() { //INITIALIZATION
     const listPlaces = this.data.places.map((place) =>
       <li key={place.name.toString()}>
-        <Link activeClassName="active" to={`/${place.name.toLowerCase().replace(" ", "-")}`} >{place.name}</Link>
+        <Link activeClassName="active" to={`/place/${place.name.toLowerCase().replace(" ", "-")}`} onClick={this.handleLinkClick}> {place.name} </Link>
       </li>
     )
 
@@ -41,7 +45,7 @@ class Menu extends Component {
 
   render() {
     return (
-      <div className="menu module">
+      <div className="menu">
         <button onClick={this.filterList}>Filter</button>
         <ul>
           {this.state.places}

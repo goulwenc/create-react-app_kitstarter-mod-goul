@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class MenuSub extends Component {
   render() {
     return (
-      <div className="menu-sub module">
+      <div className="menu-sub">
         <ul>
           <li>MenuSub 1</li>
           <li>MenuSub 2</li>
